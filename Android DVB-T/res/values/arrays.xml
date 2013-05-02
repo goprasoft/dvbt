@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string-array name="prefvalues_dvbType">
+        <item>ATSC</item>
+      <!--  <item>DVBC</item> -->
+     <!--   <item>DVBS</item>  -->
+        <item>DVBT</item>
+
+    </string-array>
+</resources>

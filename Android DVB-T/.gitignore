@@ -1,0 +1,8 @@
+/bin
+/gen
+/assets
+/obj
+/libs/*/gdb*
+/res-src/libs/w_scan-*
+/res-src/libs/bitstream-*
+/res-src/libs/dvblast-*

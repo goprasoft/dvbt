@@ -1,0 +1,20 @@
+echo "Starting DVB support"
+insmod dvb-core.ko
+insmod dvb-pll.ko
+insmod rc-core.ko
+insmod dvb-usb.ko
+insmod dvb-usb-rtl2832u.ko
+insmod dvb-usb-dtt200u.ko
+insmod dvb-usb-terratec-cinergy.ko
+echo "Waiting for device"
+sleep 5
+cd /
+mkdir /dev/dvb
+mkdir /dev/dvb/adapter0
+cd /dev/dvb/adapter0
+ln -s /dev/dvb0.frontend0 frontend0
+ln -s /dev/dvb0.demux0 demux0
+ln -s /dev/dvb0.dvr0 dvr0
+ln -s /dev/dvb0.dvr0 dvr0.ts
+chmod 777 /dev/dvb*
+echo "DONE!"
